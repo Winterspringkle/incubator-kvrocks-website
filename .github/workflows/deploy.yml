@@ -31,7 +31,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 19.x
-          cache: yarngi
+          cache: yarn
       - run: corepack enable
       - run: yarn install --frozen-lockfile
       - run: yarn build
