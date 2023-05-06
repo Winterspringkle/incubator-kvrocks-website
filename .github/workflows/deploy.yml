@@ -20,7 +20,7 @@ name: Pages
 on:
   push:
     branches:
-      - main
+      - code-block-and-chart-debug
   pull_request:
 
 jobs:
