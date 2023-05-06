@@ -31,9 +31,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 19.x
-          cache: yarn
+          cache: yarngi
       - run: corepack enable
-      - run: yarn
+      - run: yarn install --frozen-lockfile
       - run: yarn build
       - uses: peaceiris/actions-gh-pages@v3
         if: github.event_name != 'pull_request'
