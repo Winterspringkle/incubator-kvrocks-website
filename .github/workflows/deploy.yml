@@ -33,7 +33,7 @@ jobs:
           node-version: 19.x
           cache: yarn
       - run: corepack enable
-      - run: yarn install --immutable
+      - run: yarn
       - run: yarn build
       - uses: peaceiris/actions-gh-pages@v3
         if: github.event_name != 'pull_request'
